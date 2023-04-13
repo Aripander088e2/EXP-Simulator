@@ -703,7 +703,7 @@ function reboot() {
                     " and " +
                     format_eff(
                         (get_watts(game.pp) / 100) *
-                            3 ** game.supply_level *
+                            10 ** game.supply_level *
                             game.prism_boost
                     ) +
                     " g hydrogen"
@@ -714,8 +714,8 @@ function reboot() {
                 message +=
                     " and " +
                     format_eff(
-                        (get_watts(game.pp) / 10) *
-                            2.5 ** game.supply_level *
+                        (get_watts(game.pp) / 100) *
+                            9.9 ** game.supply_level *
                             game.prism_boost
                     ) +
                     " g hydrogen"
@@ -726,8 +726,8 @@ function reboot() {
                 message +=
                     " and " +
                     format_eff(
-                        (get_watts(game.pp) / 20) *
-                            4 ** game.supply_level *
+                        (get_watts(game.pp) / 100) *
+                            9.8 ** game.supply_level *
                             game.prism_boost
                     ) +
                     " g hydrogen"

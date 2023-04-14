@@ -1363,42 +1363,42 @@ function tick() {
         game.banked_prestige = 0
 
         if (game.completions[5] === 0) {
-            if (game.prestige > 6) {
+            if (game.prestige > 600) {
                 exit_challenge()
                 alert(
                     "You have exceeded 6 Prestiges, you will now exit Challenge VI."
                 )
             }
         } else if (game.completions[5] === 1) {
-            if (game.prestige > 5) {
+            if (game.prestige > 500) {
                 exit_challenge()
                 alert(
                     "You have exceeded 5 Prestiges, you will now exit Challenge VI."
                 )
             }
         } else if (game.completions[5] >= 2 && game.completions[5] <= 3) {
-            if (game.prestige > 4) {
+            if (game.prestige > 400) {
                 exit_challenge()
                 alert(
                     "You have exceeded 4 Prestiges, you will now exit Challenge VI."
                 )
             }
         } else if (game.completions[5] >= 4 && game.completions[5] <= 5) {
-            if (game.prestige > 3) {
+            if (game.prestige > 300) {
                 exit_challenge()
                 alert(
                     "You have exceeded 3 Prestiges, you will now exit Challenge VI."
                 )
             }
         } else if (game.completions[5] >= 6 && game.completions[5] <= 7) {
-            if (game.prestige > 2) {
+            if (game.prestige > 200) {
                 exit_challenge()
                 alert(
                     "You have exceeded 2 Prestiges, you will now exit Challenge VI."
                 )
             }
         } else if (game.completions[5] >= 8 && game.completions[5] <= 11) {
-            if (game.prestige > 1) {
+            if (game.prestige > 100) {
                 exit_challenge()
                 alert(
                     "You have exceeded 1 Prestige, you will now exit Challenge VI."
@@ -1406,14 +1406,14 @@ function tick() {
             }
         } else if (game.completions[5] >= 12) {
             if (game.dk_bought[3]) {
-                if (game.prestige > 0) {
+                if (game.prestige > 100) {
                     exit_challenge()
                     alert(
                         "You have exceeded 0 Prestiges, you will now exit Challenge VI."
                     )
                 }
             } else {
-                if (game.prestige > 1) {
+                if (game.prestige > 100) {
                     exit_challenge()
                     alert(
                         "You have exceeded 1 Prestige, you will now exit Challenge VI."
@@ -2194,7 +2194,7 @@ function load(savegame) {
             game.helium_boost = 1
             game.hps = 0
             game.core_level = new Array(8).fill(0)
-            game.core_price = [1, 3, 10, 36, 136, 528, 2080, 8256]
+            game.core_price = [0.1, 0.5, 2, 5, 20, 40, 100, 300]
             game.buy_max = false
             game.supply_level = 0
             game.supply_price = 16

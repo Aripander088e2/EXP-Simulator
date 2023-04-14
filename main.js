@@ -2058,7 +2058,7 @@ function load(savegame) {
         game.helium_boost = 1
         game.hps = 0
         game.core_level = new Array(8).fill(0)
-        game.core_price = [1, 3, 10, 36, 136, 528, 2080, 8256]
+        game.core_price = [0.2, 1, 3, 10, 16, 40, 100, 300]
         game.buy_max = false
         game.supply_level = 0
         game.supply_price = 16
@@ -2399,7 +2399,7 @@ function wipe() {
         game.helium_boost = 1
         game.hps = 0
         game.core_level = new Array(8).fill(0)
-        game.core_price = [1, 3, 10, 36, 136, 528, 2080, 8256]
+        game.core_price = [0.2, 1, 3, 10, 16, 40, 100, 300]
         game.buy_max = false
         game.supply_level = 0
         game.supply_price = 16
